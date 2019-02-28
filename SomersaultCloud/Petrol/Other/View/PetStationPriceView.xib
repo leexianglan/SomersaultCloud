@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PetStationPriceView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfG-jf-8vG">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="27"/>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.3803921569" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="b0S-go-ZgT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ew2-t0-RsR">
+                    <rect key="frame" x="0.0" y="27" width="200" height="173"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="降0.71元" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5DT-cb-bBy">
+                            <rect key="frame" x="0.0" y="79" width="200" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="2fy-ar-yqX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.3803921569" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥6.60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="145-Bv-BDr">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="79"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="市场价¥7.40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xka-VY-sL4">
+                            <rect key="frame" x="0.0" y="94" width="200" height="79"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="145-Bv-BDr" secondAttribute="trailing" id="Or5-ON-1bd"/>
+                        <constraint firstItem="5DT-cb-bBy" firstAttribute="centerY" secondItem="Ew2-t0-RsR" secondAttribute="centerY" id="USS-y5-pN2"/>
+                        <constraint firstItem="145-Bv-BDr" firstAttribute="leading" secondItem="Ew2-t0-RsR" secondAttribute="leading" id="VUV-xO-1uV"/>
+                        <constraint firstItem="5DT-cb-bBy" firstAttribute="leading" secondItem="Ew2-t0-RsR" secondAttribute="leading" id="cWN-yu-9m5"/>
+                        <constraint firstItem="145-Bv-BDr" firstAttribute="top" secondItem="Ew2-t0-RsR" secondAttribute="top" id="ehx-Et-5dM"/>
+                        <constraint firstAttribute="trailing" secondItem="Xka-VY-sL4" secondAttribute="trailing" id="fVl-0N-HEH"/>
+                        <constraint firstAttribute="trailing" secondItem="5DT-cb-bBy" secondAttribute="trailing" id="gPs-g5-4aH"/>
+                        <constraint firstItem="Xka-VY-sL4" firstAttribute="top" secondItem="5DT-cb-bBy" secondAttribute="bottom" id="gYb-vA-Elb"/>
+                        <constraint firstItem="Xka-VY-sL4" firstAttribute="leading" secondItem="Ew2-t0-RsR" secondAttribute="leading" id="oNF-MM-QnN"/>
+                        <constraint firstAttribute="bottom" secondItem="Xka-VY-sL4" secondAttribute="bottom" id="paw-z7-xdU"/>
+                        <constraint firstItem="5DT-cb-bBy" firstAttribute="top" secondItem="145-Bv-BDr" secondAttribute="bottom" id="zRU-WW-b4H"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ew2-t0-RsR" firstAttribute="top" secondItem="hfG-jf-8vG" secondAttribute="bottom" id="18z-bH-1vs"/>
+                <constraint firstItem="Ew2-t0-RsR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9FZ-t4-tGE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ew2-t0-RsR" secondAttribute="bottom" id="EbF-So-KtZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hfG-jf-8vG" secondAttribute="trailing" id="Mfc-u5-e2W"/>
+                <constraint firstItem="hfG-jf-8vG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="N2P-Vz-aEI"/>
+                <constraint firstAttribute="trailing" secondItem="Ew2-t0-RsR" secondAttribute="trailing" id="efE-cg-Aa1"/>
+                <constraint firstItem="hfG-jf-8vG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="u0U-V2-7QO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="baseView" destination="Ew2-t0-RsR" id="Ex1-yN-GL2"/>
+                <outlet property="oldPriceLbl" destination="Xka-VY-sL4" id="BJU-Qd-b4Z"/>
+                <outlet property="petNumLbl" destination="hfG-jf-8vG" id="bsx-q9-FZb"/>
+                <outlet property="preferLbl" destination="5DT-cb-bBy" id="AYP-41-6rE"/>
+                <outlet property="priceLbl" destination="145-Bv-BDr" id="SqO-8b-BFy"/>
+            </connections>
+        </view>
+    </objects>
+</document>

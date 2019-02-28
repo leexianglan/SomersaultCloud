@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  SomersaultCloud
+//
+//  Created by 李相兰 on 2018/9/13.
+//  Copyright © 2018年 李相兰. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+#import "AFNetworking.h"
+#import "LXViewControllerManager.h"
+#import "SDWebImageManager.h"
+#import "UIImageView+WebCache.h"
+#import "SDWebImageManager.h"
+#import "UIImageView+WebCache.h"
+
+
+#define  kDeviceWidth     CGRectGetWidth([UIScreen mainScreen].bounds)
+#define  kDeviceHeight    CGRectGetHeight([UIScreen mainScreen].bounds)
+
+#define kEqualHeight kDeviceWidth/375.f
+
+#define IPhone4 (kDeviceHeight==480)
+#define IPhone5 (kDeviceHeight==568)
+
+#define IPhone6 (kDeviceHeight==667)
+#define IPhone6p (kDeviceHeight==736)
+#define IPhoneXAbove (kDeviceHeight >= 812)
+
+
+#define IOS11Above ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11)
+#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+
+
+
+#define Color(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define Color1(a) Color(a, a, a)
+#define kRedColor Color(252, 97, 81)
+#define kGreenColor Color(34, 107, 224)
+#define BaseBgColor Color(236, 237, 241)
+#define k_3_Color Color1(51)
+#define k_6_Color Color1(102)
+#define k_8_Color Color1(136)
+#define k_9_Color Color1(153)
+#define k_b2_Color Color1(178)
+#define k_e_Color Color1(238)
+
+#define kWeChatAppID @"wx026463913c59f77c"
+#define kWeChatSecret @"962012ab869e4e6dcf164d0ea8fa2a9b"

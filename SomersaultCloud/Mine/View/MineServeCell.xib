@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="153" id="KGk-i7-Jjw" customClass="MineServeCell">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="152.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqo-PJ-CYh" customClass="MineServeBaseView">
+                        <rect key="frame" x="0.0" y="0.0" width="89" height="152.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylh-u7-6XB" customClass="MineServeBaseView">
+                        <rect key="frame" x="89" y="0.0" width="88.5" height="152.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jy-P7-Bej" customClass="MineServeBaseView">
+                        <rect key="frame" x="177.5" y="0.0" width="89" height="152.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ud6-gh-eMp" customClass="MineServeBaseView">
+                        <rect key="frame" x="266.5" y="0.0" width="88.5" height="152.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gqo-PJ-CYh" firstAttribute="width" secondItem="ylh-u7-6XB" secondAttribute="width" id="1Ys-fr-NOY"/>
+                    <constraint firstItem="gqo-PJ-CYh" firstAttribute="width" secondItem="2jy-P7-Bej" secondAttribute="width" id="1rW-V3-iQH"/>
+                    <constraint firstItem="gqo-PJ-CYh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BRa-Nr-PFJ"/>
+                    <constraint firstItem="gqo-PJ-CYh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EMu-yf-yg8"/>
+                    <constraint firstItem="Ud6-gh-eMp" firstAttribute="leading" secondItem="2jy-P7-Bej" secondAttribute="trailing" id="GvB-iY-N6t"/>
+                    <constraint firstItem="2jy-P7-Bej" firstAttribute="leading" secondItem="ylh-u7-6XB" secondAttribute="trailing" id="I8J-7e-G3R"/>
+                    <constraint firstAttribute="bottom" secondItem="Ud6-gh-eMp" secondAttribute="bottom" id="M0b-Td-t6V"/>
+                    <constraint firstItem="gqo-PJ-CYh" firstAttribute="width" secondItem="Ud6-gh-eMp" secondAttribute="width" id="Rwo-vo-xq4"/>
+                    <constraint firstAttribute="trailing" secondItem="Ud6-gh-eMp" secondAttribute="trailing" id="UXt-lm-CLo"/>
+                    <constraint firstItem="2jy-P7-Bej" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YsF-aM-Xq5"/>
+                    <constraint firstItem="ylh-u7-6XB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bVV-gC-D1X"/>
+                    <constraint firstItem="Ud6-gh-eMp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ntL-Es-F9N"/>
+                    <constraint firstAttribute="bottom" secondItem="gqo-PJ-CYh" secondAttribute="bottom" id="oEU-L7-o50"/>
+                    <constraint firstAttribute="bottom" secondItem="2jy-P7-Bej" secondAttribute="bottom" id="t1g-5L-Fpy"/>
+                    <constraint firstItem="ylh-u7-6XB" firstAttribute="leading" secondItem="gqo-PJ-CYh" secondAttribute="trailing" id="ums-rJ-r3d"/>
+                    <constraint firstAttribute="bottom" secondItem="ylh-u7-6XB" secondAttribute="bottom" id="whe-fF-kQw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outletCollection property="views" destination="gqo-PJ-CYh" collectionClass="NSMutableArray" id="D0X-P3-aW2"/>
+                <outletCollection property="views" destination="ylh-u7-6XB" collectionClass="NSMutableArray" id="bbR-by-sgf"/>
+                <outletCollection property="views" destination="2jy-P7-Bej" collectionClass="NSMutableArray" id="N7y-2h-hzY"/>
+                <outletCollection property="views" destination="Ud6-gh-eMp" collectionClass="NSMutableArray" id="nbG-zG-SKl"/>
+            </connections>
+            <point key="canvasLocation" x="13.5" y="35.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MinePeaController">
+            <connections>
+                <outlet property="baseView" destination="Gxf-3R-NZh" id="ma3-3q-ucY"/>
+                <outlet property="detailLbl" destination="uP9-nJ-O3c" id="Lwf-Mr-XtA"/>
+                <outlet property="imgView" destination="aMY-aL-QT1" id="qqS-Pe-QKC"/>
+                <outlet property="peaNumLbl" destination="1j9-sp-dRz" id="I6z-Le-84i"/>
+                <outlet property="titleLbl" destination="EGX-e8-WAQ" id="2eZ-3r-XKd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-3R-NZh">
+                    <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jindou_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="CGH-cb-otg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" horizontalCompressionResistancePriority="740" text="17737783618" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP9-nJ-O3c">
+                            <rect key="frame" x="80" y="55" width="93.5" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="0U7-4H-nQ7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile  Ya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGX-e8-WAQ">
+                            <rect key="frame" x="80" y="34" width="62" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="t97-96-TQk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金豆：120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1j9-sp-dRz">
+                            <rect key="frame" x="288.5" y="55" width="66.5" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="U1K-rX-fv2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="aMY-aL-QT1">
+                            <rect key="frame" x="28" y="27" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="aMY-aL-QT1" secondAttribute="height" multiplier="1:1" id="1uE-v2-WtR"/>
+                                <constraint firstAttribute="width" constant="44" id="ahJ-eX-moM"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="22"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uP9-nJ-O3c" firstAttribute="top" secondItem="EGX-e8-WAQ" secondAttribute="bottom" constant="5" id="444-lm-X19"/>
+                        <constraint firstAttribute="bottom" secondItem="CGH-cb-otg" secondAttribute="bottom" id="4UA-ra-ohC"/>
+                        <constraint firstItem="1j9-sp-dRz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uP9-nJ-O3c" secondAttribute="trailing" constant="5" id="4aE-by-EZh"/>
+                        <constraint firstAttribute="trailing" secondItem="1j9-sp-dRz" secondAttribute="trailing" constant="20" id="6M8-LG-uBu"/>
+                        <constraint firstAttribute="trailing" secondItem="CGH-cb-otg" secondAttribute="trailing" id="JmL-nO-Js1"/>
+                        <constraint firstItem="EGX-e8-WAQ" firstAttribute="leading" secondItem="aMY-aL-QT1" secondAttribute="trailing" constant="8" id="Mql-VE-BeM"/>
+                        <constraint firstItem="1j9-sp-dRz" firstAttribute="centerY" secondItem="uP9-nJ-O3c" secondAttribute="centerY" id="Xlq-2Q-m4K"/>
+                        <constraint firstItem="uP9-nJ-O3c" firstAttribute="leading" secondItem="EGX-e8-WAQ" secondAttribute="leading" id="ZbL-H4-NnD"/>
+                        <constraint firstItem="EGX-e8-WAQ" firstAttribute="top" secondItem="aMY-aL-QT1" secondAttribute="top" constant="7" id="gGt-hb-X96"/>
+                        <constraint firstAttribute="width" secondItem="Gxf-3R-NZh" secondAttribute="height" multiplier="375:128" id="hxR-J0-CRo"/>
+                        <constraint firstItem="aMY-aL-QT1" firstAttribute="centerY" secondItem="Gxf-3R-NZh" secondAttribute="centerY" constant="-15" id="j1D-eK-JAi"/>
+                        <constraint firstItem="CGH-cb-otg" firstAttribute="top" secondItem="Gxf-3R-NZh" secondAttribute="top" id="nOz-Ad-xUK"/>
+                        <constraint firstItem="aMY-aL-QT1" firstAttribute="leading" secondItem="Gxf-3R-NZh" secondAttribute="leading" constant="28" id="sHR-Wr-sSU"/>
+                        <constraint firstItem="CGH-cb-otg" firstAttribute="leading" secondItem="Gxf-3R-NZh" secondAttribute="leading" id="ssb-WK-iT8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gxf-3R-NZh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="pA4-B8-b44"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Gxf-3R-NZh" secondAttribute="trailing" id="vYn-q0-9t8"/>
+                <constraint firstItem="Gxf-3R-NZh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xlm-dh-jqi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jindou_bg.png" width="1125" height="383"/>
+        <image name="logo.png" width="278" height="278"/>
+    </resources>
+</document>

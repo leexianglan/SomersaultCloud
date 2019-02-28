@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="MakeOrderPetNumTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsP-pJ-P5N">
+                        <rect key="frame" x="0.0" y="90" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="WeG-My-abz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMS-0D-OmA">
+                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="90.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-iB-1f3" customClass="LXButton">
+                                <rect key="frame" x="25" y="0.0" width="56.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4NL-n5-0bd"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="90#">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZNg-kl-NIo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ctk-iB-1f3" firstAttribute="top" secondItem="tMS-0D-OmA" secondAttribute="top" id="bjm-kM-xiU"/>
+                            <constraint firstItem="ctk-iB-1f3" firstAttribute="width" secondItem="tMS-0D-OmA" secondAttribute="width" constant="-50" id="m4F-Tp-Pjv"/>
+                            <constraint firstItem="ctk-iB-1f3" firstAttribute="centerX" secondItem="tMS-0D-OmA" secondAttribute="centerX" id="usb-TJ-68A"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lK7-z2-lFG">
+                        <rect key="frame" x="106.5" y="0.0" width="107" height="90.5"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpq-gw-u9C" customClass="LXButton">
+                                <rect key="frame" x="24.5" y="0.0" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xvT-H3-kMr"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="90#">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1vG-n1-933"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kpq-gw-u9C" firstAttribute="centerX" secondItem="lK7-z2-lFG" secondAttribute="centerX" id="BSz-89-PkS"/>
+                            <constraint firstItem="kpq-gw-u9C" firstAttribute="width" secondItem="lK7-z2-lFG" secondAttribute="width" constant="-50" id="Tt3-Hp-mAF"/>
+                            <constraint firstItem="kpq-gw-u9C" firstAttribute="top" secondItem="lK7-z2-lFG" secondAttribute="top" id="sp9-Cd-yxN"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKh-x6-Zeg">
+                        <rect key="frame" x="213.5" y="0.0" width="106.5" height="90.5"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b7-nq-8OZ" customClass="LXButton">
+                                <rect key="frame" x="25" y="0.0" width="56.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JKO-v3-ohn"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="90#">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nxx-LW-IwX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5b7-nq-8OZ" firstAttribute="width" secondItem="lKh-x6-Zeg" secondAttribute="width" constant="-50" id="2g5-oP-XnJ"/>
+                            <constraint firstItem="5b7-nq-8OZ" firstAttribute="top" secondItem="lKh-x6-Zeg" secondAttribute="top" id="NlR-tM-8d3"/>
+                            <constraint firstItem="5b7-nq-8OZ" firstAttribute="centerX" secondItem="lKh-x6-Zeg" secondAttribute="centerX" id="TyS-NS-kL0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lK7-z2-lFG" firstAttribute="leading" secondItem="tMS-0D-OmA" secondAttribute="trailing" id="17D-ek-Sta"/>
+                    <constraint firstItem="tMS-0D-OmA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Bxc-xN-hln"/>
+                    <constraint firstItem="LsP-pJ-P5N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DEh-dH-YqH"/>
+                    <constraint firstItem="lKh-x6-Zeg" firstAttribute="width" secondItem="lK7-z2-lFG" secondAttribute="width" id="Eax-yz-kRv"/>
+                    <constraint firstAttribute="bottom" secondItem="lKh-x6-Zeg" secondAttribute="bottom" id="HyU-LX-y9z"/>
+                    <constraint firstAttribute="bottom" secondItem="tMS-0D-OmA" secondAttribute="bottom" id="LB7-yZ-bpd"/>
+                    <constraint firstItem="tMS-0D-OmA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PHf-zv-2wq"/>
+                    <constraint firstItem="lKh-x6-Zeg" firstAttribute="leading" secondItem="lK7-z2-lFG" secondAttribute="trailing" id="QZL-XZ-XIh"/>
+                    <constraint firstAttribute="bottom" secondItem="LsP-pJ-P5N" secondAttribute="bottom" id="SRA-fV-R9X"/>
+                    <constraint firstItem="lKh-x6-Zeg" firstAttribute="width" secondItem="tMS-0D-OmA" secondAttribute="width" id="bfm-vP-bK5"/>
+                    <constraint firstAttribute="trailing" secondItem="LsP-pJ-P5N" secondAttribute="trailing" id="c56-Kt-zFH"/>
+                    <constraint firstAttribute="trailing" secondItem="lKh-x6-Zeg" secondAttribute="trailing" id="ekp-nj-OOa"/>
+                    <constraint firstItem="lKh-x6-Zeg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ibO-sQ-pjF"/>
+                    <constraint firstAttribute="bottom" secondItem="lK7-z2-lFG" secondAttribute="bottom" id="otM-qo-Vab"/>
+                    <constraint firstItem="lK7-z2-lFG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tks-9m-zEd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="line" destination="LsP-pJ-P5N" id="UZp-C9-Ehb"/>
+                <outletCollection property="btns" destination="ctk-iB-1f3" id="cCZ-4e-u5j"/>
+                <outletCollection property="btns" destination="kpq-gw-u9C" id="y3x-v6-AQX"/>
+                <outletCollection property="btns" destination="5b7-nq-8OZ" id="pAK-gK-ENg"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="77.5"/>
+        </tableViewCell>
+    </objects>
+</document>

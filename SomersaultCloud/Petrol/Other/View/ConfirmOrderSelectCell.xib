@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="ConfirmOrderSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-8d-YMM">
+                        <rect key="frame" x="50" y="14" width="58" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ThC-Kf-pLg">
+                        <rect key="frame" x="15" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ThC-Kf-pLg" secondAttribute="height" multiplier="1:1" id="iEn-vp-GdS"/>
+                            <constraint firstAttribute="width" constant="25" id="iVK-6z-oWY"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVT-Rs-PuC">
+                        <rect key="frame" x="282.5" y="5" width="34.5" height="34.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="DVT-Rs-PuC" secondAttribute="height" id="zn5-js-KqP"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="danxuan_n.png"/>
+                        <state key="selected" image="me_ myorders_saomajiayou_fukuanOK_icon.png"/>
+                        <connections>
+                            <action selector="btnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NTe-ML-8re"/>
+                        </connections>
+                    </button>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-Nb-FrN">
+                        <rect key="frame" x="0.0" y="44" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="PIl-J9-TVv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RdA-8d-YMM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5VO-zd-JLW"/>
+                    <constraint firstAttribute="bottom" secondItem="FfB-Nb-FrN" secondAttribute="bottom" id="BXI-vf-HgD"/>
+                    <constraint firstItem="FfB-Nb-FrN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NH7-Th-lZr"/>
+                    <constraint firstItem="ThC-Kf-pLg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f7O-7t-klw"/>
+                    <constraint firstItem="RdA-8d-YMM" firstAttribute="leading" secondItem="ThC-Kf-pLg" secondAttribute="trailing" constant="10" id="jAb-Vi-KWd"/>
+                    <constraint firstAttribute="trailing" secondItem="FfB-Nb-FrN" secondAttribute="trailing" id="mhc-TX-rIT"/>
+                    <constraint firstAttribute="trailing" secondItem="DVT-Rs-PuC" secondAttribute="trailing" constant="3" id="mzP-Sn-AAZ"/>
+                    <constraint firstAttribute="bottom" secondItem="DVT-Rs-PuC" secondAttribute="bottom" constant="5" id="ruk-pD-Fl2"/>
+                    <constraint firstItem="ThC-Kf-pLg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ttz-yb-aAl"/>
+                    <constraint firstItem="DVT-Rs-PuC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uTf-xH-LUX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btn" destination="DVT-Rs-PuC" id="Ztu-Rr-tPZ"/>
+                <outlet property="imgView" destination="ThC-Kf-pLg" id="IHF-6y-Yvt"/>
+                <outlet property="lbl" destination="RdA-8d-YMM" id="v8O-hj-rUt"/>
+                <outlet property="line" destination="FfB-Nb-FrN" id="Ejb-Yr-9cL"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="156.97151424287858"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="danxuan_n.png" width="16" height="16"/>
+        <image name="me_ myorders_saomajiayou_fukuanOK_icon.png" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LXButtonWithRotaingImg">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down.png" translatesAutoresizingMaskIntoConstraints="NO" id="hRv-zD-gyC">
+                    <rect key="frame" x="154" y="94" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="7Kx-B2-QxC"/>
+                        <constraint firstAttribute="width" secondItem="hRv-zD-gyC" secondAttribute="height" multiplier="1:1" id="SCS-Fq-Phw"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nre-Qe-5nB">
+                    <rect key="frame" x="0.0" y="85.5" width="320" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bks-Nd-MSd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Nre-Qe-5nB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2nk-pN-dD2"/>
+                <constraint firstItem="hRv-zD-gyC" firstAttribute="centerY" secondItem="Nre-Qe-5nB" secondAttribute="centerY" id="6TC-i5-dbQ"/>
+                <constraint firstItem="Nre-Qe-5nB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Jjr-ax-Zsd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nre-Qe-5nB" secondAttribute="trailing" id="QO7-Dw-psO"/>
+                <constraint firstItem="hRv-zD-gyC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mt2-9H-c8h"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btn" destination="Nre-Qe-5nB" id="Ef8-1z-los"/>
+                <outlet property="imgV" destination="hRv-zD-gyC" id="kU8-nM-QpL"/>
+                <outlet property="imgVX" destination="mt2-9H-c8h" id="38g-HQ-TVD"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-180"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_down.png" width="22" height="22"/>
+    </resources>
+</document>
