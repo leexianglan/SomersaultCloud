@@ -40,6 +40,9 @@
 -(void)try{
     NSLog(@"try 1314");
 }
+-(void)try321{
+    NSLog(@"try now 2019 03 01 14 13");
+}
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     //    [webView.scrollView.mj_header endRefreshing];
