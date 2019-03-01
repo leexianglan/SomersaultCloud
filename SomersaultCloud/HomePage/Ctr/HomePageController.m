@@ -37,6 +37,10 @@
 
 }
 
+-(void)try{
+    NSLog(@"try 1314");
+}
+
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     //    [webView.scrollView.mj_header endRefreshing];
     NSString *url = [webView.request.URL absoluteString];
