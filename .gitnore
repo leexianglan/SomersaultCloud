@@ -3,4 +3,4 @@
 *.ipa
 *.a
 *.dSYM
-*.xcuserdatad
+*.xcuserstate
